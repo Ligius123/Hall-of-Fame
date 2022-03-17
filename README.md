@@ -12,4 +12,4 @@ Moreover, you can tell what are your similarities or how that person became your
 - CSS
 - ReactJS 
 - NodeJS
-- MySQL 
+- MongoDB
