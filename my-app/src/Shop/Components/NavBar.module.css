@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  font-size: 1.5rem;
+}
+
+html {
+  height: 1000px;
+}
+
+.NavBarTotal {
+  background-color: rgb(2, 47, 47);
+  position: fixed;
+  width: 100%;
+  height: 7rem;
+  box-shadow: 0.2rem rgba(0, 0, 0, 0.592);
+  margin-bottom: 200px;
+}
+
+.Title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 50%;
+  color: white;
+  text-shadow: 2px 2px rgba(255, 255, 255, 0.44);
+  margin-top: 0.5rem;
+}
+
+.NavBarButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50%;
+}
+
+.Button {
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.89);
+  margin-left: 1rem;
+  padding: 0.3rem;
+}
+
+.Button:hover,
+.Button:active {
+  background-color: white;
+  text-shadow: 1rem;
+  cursor: pointer;
+}
