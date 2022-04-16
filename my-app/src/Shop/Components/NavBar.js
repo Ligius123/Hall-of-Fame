@@ -14,9 +14,15 @@ const NavBar = (props) => {
             <button type="button" className={classes.Button}>
               Shop
             </button>
-            <button type="button" className={classes.Button}>
-              Presentation
-            </button>
+            <div className={classes.dropdown}>
+              <button className={classes.Button}>Presentation</button>
+              <div className={classes.dropdown_content}>
+                <a href="#">Gheoarghe Hagi</a>
+                <a href="#">Nadia Comaneci</a>
+                <a href="#">Ana Maria Branza</a>
+                <a href="#">Simona Halep</a>
+              </div>
+            </div>
             <button type="button" className={classes.Button}>
               Sign In
             </button>
