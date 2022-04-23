@@ -30,13 +30,18 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 50%;
+}
+
+.Image {
+  padding: 0;
+  margin-left: 0.6rem;
+  border-radius: 50%;
 }
 
 .Button {
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.89);
-  margin-left: 1rem;
+  margin-right: 1rem;
   padding: 0.3rem;
 }
 

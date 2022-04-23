@@ -7,8 +7,13 @@ const NavBar = (props) => {
       <div className={classes.Title}>Hall of Fame</div>
       <div>
         <div className={classes.NavBarButtons}>
-          <button type="button" className={classes.Button}>
-            Home
+        <button type="button" className={classes.Button}>
+            <img
+              src={process.env.PUBLIC_URL + "halloffame-large.png"}
+              alt=""
+              height="40"
+              width="40"
+            />
           </button>
           <div>
             <button type="button" className={classes.Button}>
