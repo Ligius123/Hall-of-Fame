@@ -21,6 +21,36 @@ app.use('/',express.static(path.join(__dirname,'static')))
 app.use(express.json)
 const JWT_SECRET = 'AA}?"SFASUHFASJ{{?}OVBASJOVB}":ASJOVBASOVBJVA{SV' ///HAS TO BE ABSOLUTELY SECRET
 
+app.post('/api/change-password',(req,res)=>{
+    const {token, newpassword: plainTextPassword} = req.body
+    if(!username || typeof username !='string'){
+        return res.json({status: 'error', error:'Invalid username'})
+    }
+    if(!plainTextPassword || typeof plainTextPassword !='string'){
+        return res.json({status: 'error', error:'Invalid password'})
+    }
+    if(plainTextPassword.length <= 10 || plainTextPassword.length >= 5){
+        return res.json({
+            status: 'error',
+            error: 'Password must be between 5 and 10 caracters'
+        })
+    }
+    try{
+        const user = jwt.verify(token,JWT_SECRET)
+        const _id = user.id
+        const password = await bcrypt.hash(plainTextPassword,16)
+        await User.updateOne(
+            {_id},{
+                $set: {password}
+            }
+        )
+        res.json({status: 'ok'})
+
+    }catch(error){
+        res.json({status: 'error',error: 'Out of Beer? Wrong data'})
+    }
+})
+
 app.post('/api/login',async(req,res)=> {
     
 const {username, password } = req.body
