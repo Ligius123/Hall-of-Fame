@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 
-const PHagi = () => {
+const HagiPage = () => {
   return <Fragment>This is Dummy Hagi</Fragment>;
 };
 
-export default PHagi;
+export default HagiPage;

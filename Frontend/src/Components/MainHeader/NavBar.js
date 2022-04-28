@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 const NavBar = (props) => {
   return (
     <Fragment>
-      <div className={classes.wrapper}>
+      <nav className={classes.wrapper}>
         <div className={classes.title}>Hall of Fame</div>
         <div className={classes.rowSecond}>
           <Button type="button">Home</Button>
@@ -16,16 +16,19 @@ const NavBar = (props) => {
             <div className={classes.dropdown}>
               <Button className={classes.Button}>Presentation</Button>
               <div className={classes.dropdown_content}>
-                <NavLink to="/PHagi">Gheoarghe Hagi</NavLink>
-                <NavLink to="/PComaneci">Nadia Comaneci</NavLink>
-                <NavLink to="/PBranza">Ana Maria Branza</NavLink>
-                <NavLink to="/PHalep">Simona Halep</NavLink>
+                <NavLink to="/HagiPage">Gheoarghe Hagi</NavLink>
+                <NavLink to="/ComaneciPage">Nadia Comaneci</NavLink>
+                <NavLink to="/BranzaPage">Ana Maria Branza</NavLink>
+                <NavLink to="/HalepPage">Simona Halep</NavLink>
               </div>
             </div>
-            <Button type="button">Sign In</Button>
+
+            <NavLink to="/AuthPage">
+              <Button>Sign In</Button>
+            </NavLink>
           </div>
         </div>
-      </div>
+      </nav>
     </Fragment>
   );
 };

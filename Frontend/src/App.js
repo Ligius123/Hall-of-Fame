@@ -1,28 +1,34 @@
-import { Fragment } from "react";
-import NavBar from "./MainHeader/NavBar";
-import { Route } from "react-router-dom";
-import PHagi from "./Pages/PHagi/PHagi";
-import PBranza from "./Pages/PBranza/PBranza";
-import PComaneci from "./Pages/PComaneci/PComaneci";
-import PHalep from "./Pages/PHalep/PHalep";
+import Layout from "./Components/MainHeader/Layout";
+import { Route, Switch } from "react-router-dom";
+import HagiPage from "./Pages/HagiPage";
+import BranzaPage from "./Pages/BranzaPage";
+import ComaneciPage from "./Pages/ComaneciPage";
+import HalepPage from "./Pages/HalepPage";
+import AuthPage from "./Pages/AuthPage";
 
 function App() {
   return (
-    <Fragment>
-      <NavBar />
-      <Route path="/PHagi">
-        <PHagi />
-      </Route>
-      <Route path="/PHalep">
-        <PHalep />
-      </Route>
-      <Route path="/PComaneci">
-        <PComaneci />
-      </Route>
-      <Route path="/PBranza">
-        <PBranza />
-      </Route>
-    </Fragment>
+    <Layout>
+      <main>
+        <Switch>
+          <Route path="/HagiPage">
+            <HagiPage />
+          </Route>
+          <Route path="/HalepPage">
+            <HalepPage />
+          </Route>
+          <Route path="/ComaneciPage">
+            <ComaneciPage />
+          </Route>
+          <Route path="/BranzaPage">
+            <BranzaPage />
+          </Route>
+          <Route path="/AuthPage">
+            <AuthPage />
+          </Route>
+        </Switch>
+      </main>
+    </Layout>
   );
 }
 
