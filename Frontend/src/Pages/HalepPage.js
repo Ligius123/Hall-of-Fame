@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 
-const PHalep = () => {
+const HalepPage = () => {
   return <Fragment>This is Dummy Halep</Fragment>;
 };
 
-export default PHalep;
+export default HalepPage;
