@@ -5,16 +5,22 @@ const { userInfo } = require('os')
 const { waitForDebugger } = require('inspector')
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
+const { CONNREFUSED } = require('dns')
+
+import postRoutes from './routes/posts.js';
 
 
 
 //https://jwt.io/     -> helpful link
+app.use('/posts', postRoutes);
 
-mongoose.connect('mongodb+srv://admineY1AVCnOzCCRJDwQ@cluster0.p4jm5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
-    usenewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true
-})
+const connectionURL = 'mongodb+srv://admin:eY1AVCnOzCCRJDwQ@cluster0.p4jm5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+const PORT = process.env.PORT || 5000;
+mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true ,useCreateIndex: true})
+  .then(() => app.listen(PORT, () => console.log(`Server Running on Port: http://localhost:${PORT}`)))
+  .catch((error) => console.log(`${error} did not connect`));
+
+mongoose.set('useFindAndModify', false);
 
 const app = express()
 app.use('/',express.static(path.join(__dirname,'static')))
