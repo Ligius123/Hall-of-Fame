@@ -5,6 +5,7 @@ import BranzaPage from "./Pages/BranzaPage";
 import ComaneciPage from "./Pages/ComaneciPage";
 import HalepPage from "./Pages/HalepPage";
 import AuthPage from "./Pages/AuthPage";
+import ShopPage from "./Pages/ShopPage";
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
           </Route>
           <Route path="/AuthPage">
             <AuthPage />
+            <Route path="/ShopPage">
+              <ShopPage />
+            </Route>
           </Route>
         </Switch>
       </main>
