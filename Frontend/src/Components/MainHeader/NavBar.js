@@ -12,7 +12,9 @@ const NavBar = (props) => {
         <div className={classes.rowSecond}>
           <Button type="button">Home</Button>
           <div className={classes.pages}>
-            <Button type="button">Shop</Button>
+            <NavLink to="/ShopPage">
+              <Button type="button">Shop</Button>
+            </NavLink>
             <div className={classes.dropdown}>
               <Button className={classes.Button}>Presentation</Button>
               <div className={classes.dropdown_content}>
