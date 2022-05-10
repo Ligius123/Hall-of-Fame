@@ -26,9 +26,9 @@ function App() {
           </Route>
           <Route path="/AuthPage">
             <AuthPage />
-            <Route path="/ShopPage">
-              <ShopPage />
-            </Route>
+          </Route>
+          <Route path="/ShopPage">
+            <ShopPage />
           </Route>
         </Switch>
       </main>
