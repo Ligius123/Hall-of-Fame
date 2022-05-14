@@ -6,12 +6,16 @@ import ComaneciPage from "./Pages/ComaneciPage";
 import HalepPage from "./Pages/HalepPage";
 import AuthPage from "./Pages/AuthPage";
 import ShopPage from "./Pages/ShopPage";
+import HomePage from "./Pages/HomePage";
 
 function App() {
   return (
     <Layout>
       <main>
         <Switch>
+          <Route path="/HomePage">
+            <HomePage />
+          </Route>
           <Route path="/HagiPage">
             <HagiPage />
           </Route>
