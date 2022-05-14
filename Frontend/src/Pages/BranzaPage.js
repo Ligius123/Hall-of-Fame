@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 
 const BranzaPage = () => {
-  return <Fragment>This is Dummy Branza</Fragment>;
+  return <Fragment>This dummy Branza Page</Fragment>;
 };
 
 export default BranzaPage;
