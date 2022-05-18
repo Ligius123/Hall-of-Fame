@@ -2,6 +2,8 @@
   width: 85%;
   background-color: aliceblue;
   margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 15px 5px rgba(36, 38, 40, 0.8);
 }
 
 .slider {
