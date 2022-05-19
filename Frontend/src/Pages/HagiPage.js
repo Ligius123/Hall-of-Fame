@@ -1,11 +1,11 @@
 import { Fragment } from "react";
-import ImageSlider from "../Components/ImageSlider/ImageSlider";
-import { SliderData } from "../Components/ImageSlider/SliderData";
+import ImageSliderHagi from "../Components/ImageSlider/ImageSliderHagi";
+import { SliderDataHagi } from "../Components/ImageSlider/SliderDataHagi";
 
 const HagiPage = () => {
   return (
     <Fragment>
-      <ImageSlider slides={SliderData} />
+      <ImageSliderHagi slides={SliderDataHagi} />
     </Fragment>
   );
 };

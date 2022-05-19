@@ -1,4 +1,4 @@
-export const SliderData = [
+export const SliderDataHagi = [
   {
     image: process.env.PUBLIC_URL + "/h1.jpg",
   },

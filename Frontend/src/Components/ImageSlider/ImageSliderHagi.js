@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { SliderData } from "./SliderData";
+import { SliderDataHagi } from "./SliderDataHagi";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import classes from "./ImageSlider.module.css";
-import Card from "../UI/Card";
 import Wrapper from "./Wrapper";
 
 const ImageSlider = ({ slides }) => {
@@ -32,7 +31,7 @@ const ImageSlider = ({ slides }) => {
           className={classes.rightArrow}
           onClick={nextSlide}
         />
-        {SliderData.map((slide, index) => {
+        {SliderDataHagi.map((slide, index) => {
           return (
             <div>
               <div
