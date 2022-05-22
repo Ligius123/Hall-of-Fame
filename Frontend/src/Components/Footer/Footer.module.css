@@ -1,0 +1,26 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  justify-content: space-between;
+}
+
+.elements {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.element {
+  color: aliceblue;
+  font-size: 1rem;
+  margin: 1rem 0rem 1rem 0rem;
+}
+
+.element:hover,
+.element:active,
+.element:focus {
+  text-shadow: 2px 2px rgba(255, 255, 255, 0.44);
+  cursor: pointer;
+  text-decoration: underline;
+}
