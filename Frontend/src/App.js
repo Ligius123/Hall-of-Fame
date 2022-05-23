@@ -7,6 +7,9 @@ import HalepPage from "./Pages/HalepPage";
 import AuthPage from "./Pages/AuthPage";
 import ShopPage from "./Pages/ShopPage";
 import HomePage from "./Pages/HomePage";
+import PrivacyPoliciesPage from "./Pages/PrivacyPoliciesPage";
+import TermsOfUsePage from "./Pages/TermsOfUsePage";
+import AboutPage from "./Pages/AboutPage";
 
 function App() {
   return (
@@ -33,6 +36,15 @@ function App() {
           </Route>
           <Route path="/ShopPage">
             <ShopPage />
+          </Route>
+          <Route path="/Privacy">
+            <PrivacyPoliciesPage />
+          </Route>
+          <Route path="/Terms">
+            <TermsOfUsePage />
+          </Route>
+          <Route path="/About">
+            <AboutPage />
           </Route>
         </Switch>
       </main>
