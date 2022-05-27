@@ -53,3 +53,7 @@
   transition-duration: 1s;
   transform: scale(1.08);
 }
+
+.data{
+  margin: 1rem 1rem 1rem 1rem;
+}

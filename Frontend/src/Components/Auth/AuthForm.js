@@ -10,7 +10,8 @@ const AuthForm = () => {
   };
 
   return (
-    <section className={classes.auth}>
+    <section className={classes.wrapper}>
+    <div className={classes.auth}>
       <h1>{isLogin ? "Login" : "Sign Up"}</h1>
       <form>
         <div className={classes.control}>
@@ -32,6 +33,7 @@ const AuthForm = () => {
           </button>
         </div>
       </form>
+    </div>
     </section>
   );
 };
