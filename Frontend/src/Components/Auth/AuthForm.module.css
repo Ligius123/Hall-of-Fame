@@ -1,13 +1,24 @@
 .wrapper {
-  margin: 7rem auto;
+  margin: 8rem auto;
   background-image: url("LockerRoom.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   width: 60%;
   text-align: center;
   display: flex;
   justify-content: center;
   border-radius: 16px;
   box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.75);
+  max-width: 60rem;
+  /* width: 90%; */
+  margin: 2rem auto;
+  animation: wrapper-appear 1s ease-out forwards;
 }
+
+/* body{
+  background: url(../Images/computer.jpg) center / cover no-repeat border-box;
+} */
 
 .auth {
   margin: 7rem auto;
@@ -82,4 +93,16 @@
 .actions .toggle:hover {
   background-color: transparent;
   color: #ae82cc;
+}
+
+@keyframes wrapper-appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
