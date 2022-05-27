@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
+  margin-left: 450px;
 }
 
 .app {
@@ -12,7 +13,7 @@
   height: min-content;
   border-radius: 15px;
   padding: 20px;
-  box-shadow:  0 0 15px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.75);
   margin: 2rem 1rem 1rem 1rem;
 }
 

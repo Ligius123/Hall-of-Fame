@@ -10,11 +10,13 @@
   align-items: center;
   border-radius: 25px;
   font-weight: bold;
+  
 }
 
 .button:hover,
 .button:active {
   background-color: #2c0d00;
+  box-shadow: 0 0 15px 5px rgba(36, 38, 40, 0.8);
 }
 
 .icon {
