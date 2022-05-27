@@ -48,7 +48,7 @@ const ImageSlider = ({ slides }) => {
           );
         })}
       </section>
-      <div>
+      <div className={classes.data}>
         I se spune românca de 10 și toată lumea a auzit de Nadia Comăneci. Nadia
         este o legendă vie, fiind prima sportivă din istoria gimnasticii care a
         obținut nota maximă. Astăzi, trecem în revistă câteva lucruri mai puțin

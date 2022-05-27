@@ -9,7 +9,7 @@ const Header = (props) => {
     <Fragment>
       <header className={classes.header}>
         <div></div>
-        <HeaderCartButton />
+        <HeaderCartButton onClick={props.onShowCart} />
       </header>
       <div className={classes["main-image"]}>
         <img src={articlesImage} alt="A table full of signed articles!" />
@@ -19,3 +19,5 @@ const Header = (props) => {
 };
 
 export default Header;
+
+//A table full of signed articles!

@@ -3,7 +3,7 @@ import classes from "./Footer.module.css"
 
 const TermsOfUse = () => {
   return (
-    <Wrapper className={classes.inPage}>
+    <Wrapper className={classes.data}>
       By placing an order you are offering to purchase a product on and subject
       to the following terms and conditions. All orders are subject to
       availability and confirmation of the order price. Dispatch times may vary

@@ -48,7 +48,7 @@ const ImageSlider = ({ slides }) => {
           );
         })}
       </section>
-      <div>
+      <div className={classes.data}>
         "Clubul este uimitor, sunt multe terenuri, iar Praga este unul dintre
         cele mai frumoase orase pe care le-am vazut. Am avut sansa sa vizitez
         Praga in urma cu 15 ani, dar nu imi amintesc prea multe, asa ca acum am

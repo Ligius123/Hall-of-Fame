@@ -3,7 +3,7 @@ import classes from "./Footer.module.css";
 
 const About = () => {
   return (
-    <div className={classes.inPage}>
+    <div className={classes.data}>
     <Wrapper>
       We stand here for you to have your favourite articles with your favourite
       athelets siganture, but more important we give you the chance to obtain
