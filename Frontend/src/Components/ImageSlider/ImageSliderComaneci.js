@@ -3,6 +3,7 @@ import { SliderDataComaneci } from "./SliderDataComaneci";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import classes from "./ImageSlider.module.css";
 import Wrapper from "./Wrapper";
+import QuizzComaneci from "../Quizz/QuizzComaneci";
 
 const ImageSlider = ({ slides }) => {
   const [current, setCurrent] = useState(0);
@@ -69,6 +70,7 @@ const ImageSlider = ({ slides }) => {
         Vieru s-au întâlnit cu Ilie Năstase, care i-a dus în vizită la
         apartamentul iubitei sale de atunci, interpreta Diana Ross.
       </div>
+      <QuizzComaneci />
     </Wrapper>
   );
 };

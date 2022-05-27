@@ -1,42 +1,41 @@
 import React, { useState } from "react";
 import classes from "./Quizz.module.css";
-const QuizzHagi = () => {
+const QuizzComaneci = () => {
   const questions = [
     {
-      questionText: "For which football club Hagi was the most efficient?",
+      questionText: "Which is her nickname?",
       answerOptions: [
-        { answerText: "Real Madrid", isCorrect: false },
-        { answerText: "Brescia", isCorrect: false },
-        { answerText: "Steaua", isCorrect: false },
-        { answerText: "Galatasaray", isCorrect: true },
+        { answerText: "The catlike", isCorrect: false },
+        { answerText: "The hope", isCorrect: false },
+        { answerText: "The goddess of Montreal", isCorrect: true },
+        { answerText: "The special one", isCorrect: false },
       ],
     },
     {
-      questionText: "Which is the retirement age of Hagi?",
+      questionText: "Which is her start year in gymnastics?",
       answerOptions: [
-        { answerText: "35", isCorrect: false },
-        { answerText: "34", isCorrect: false },
-        { answerText: "36", isCorrect: true },
-        { answerText: "37", isCorrect: false },
+        { answerText: "1972", isCorrect: false },
+        { answerText: "1967", isCorrect: false },
+        { answerText: "1975", isCorrect: false },
+        { answerText: "1970", isCorrect: true },
       ],
     },
     {
-      questionText:
-        "How many goals did Hagi score at National team of Romania?",
+      questionText: "Which is the year when Nadia conquered the clean 10?",
       answerOptions: [
-        { answerText: "35", isCorrect: true },
-        { answerText: "42", isCorrect: false },
-        { answerText: "28", isCorrect: false },
-        { answerText: "36", isCorrect: false },
+        { answerText: "1976", isCorrect: true },
+        { answerText: "1975", isCorrect: false },
+        { answerText: "1977", isCorrect: false },
+        { answerText: "1978", isCorrect: false },
       ],
     },
     {
-      questionText: "What is Hagi's nickname?",
+      questionText: "Which is her birthday year?",
       answerOptions: [
-        { answerText: "The Wild Cat", isCorrect: false },
-        { answerText: "Maradonna from the Carpathians", isCorrect: true },
-        { answerText: "The King", isCorrect: false },
-        { answerText: "El Matador", isCorrect: false },
+        { answerText: "12 November 1961", isCorrect: true },
+        { answerText: "12 November 1963", isCorrect: false },
+        { answerText: "20 June 1960", isCorrect: false },
+        { answerText: "28 August 1970", isCorrect: false },
       ],
     },
   ];
@@ -93,4 +92,4 @@ const QuizzHagi = () => {
   );
 };
 
-export default QuizzHagi;
+export default QuizzComaneci;
