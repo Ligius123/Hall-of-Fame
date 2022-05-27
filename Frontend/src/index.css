@@ -4,7 +4,12 @@
 
 html {
   font-family: sans-serif;
-  background: rgb(200, 243, 182);
+  background: rgb(168, 236, 117);
+  background-image: linear-gradient(
+    180deg,
+    rgb(200, 243, 182),
+    rgb(124, 230, 43)
+  );
 }
 
 body {

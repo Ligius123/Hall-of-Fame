@@ -1,3 +1,14 @@
+.wrapper {
+  margin: 7rem auto;
+  background-image: url("LockerRoom.jpg");
+  width: 60%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 16px;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.75);
+}
+
 .auth {
   margin: 7rem auto;
   width: 95%;
@@ -8,6 +19,7 @@
   padding: 1rem;
   text-align: center;
   box-shadow: 0 0 15px 5px rgba(36, 38, 40, 0.8);
+  opacity: 0.9;
 }
 
 .auth h1 {

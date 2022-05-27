@@ -3,6 +3,7 @@ import { SliderDataHagi } from "./SliderDataHagi";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import classes from "./ImageSlider.module.css";
 import Wrapper from "./Wrapper";
+import QuizzHagi from "../Quizz/QuizzHagi";
 
 const ImageSlider = ({ slides }) => {
   const [current, setCurrent] = useState(0);
@@ -49,7 +50,7 @@ const ImageSlider = ({ slides }) => {
         })}
      
       </section>
-      <div>
+      <div className={classes.data}>
           11. La 31 octombrie 2000, preşedintele
            Emil Constantinescu i-a
           conferit Ordinul Naţional
@@ -96,6 +97,7 @@ const ImageSlider = ({ slides }) => {
           desemnat cel mai frumos gol pe contraatac 
           din istoria competiţiei.
         </div>
+        <QuizzHagi />
     </Wrapper>
   );
 };
