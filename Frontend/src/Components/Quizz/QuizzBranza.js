@@ -1,42 +1,42 @@
 import React, { useState } from "react";
 import classes from "./Quizz.module.css";
-const QuizzHagi = () => {
+const Quizz = () => {
   const questions = [
     {
-      questionText: "For which football club Hagi was the most efficient?",
+      questionText: "How many 1st Olympics games positions does Ana has?",
       answerOptions: [
-        { answerText: "Real Madrid", isCorrect: false },
-        { answerText: "Brescia", isCorrect: false },
-        { answerText: "Steaua", isCorrect: false },
-        { answerText: "Galatasaray", isCorrect: true },
-      ],
-    },
-    {
-      questionText: "Which is the retirement age of Hagi?",
-      answerOptions: [
-        { answerText: "35", isCorrect: false },
-        { answerText: "34", isCorrect: false },
-        { answerText: "36", isCorrect: true },
-        { answerText: "37", isCorrect: false },
+        { answerText: "0", isCorrect: false },
+        { answerText: "2", isCorrect: false },
+        { answerText: "1", isCorrect: true },
+        { answerText: "3", isCorrect: false },
       ],
     },
     {
       questionText:
-        "How many goals did Hagi score at National team of Romania?",
+        "Which is the year when Ana conquered the first place at team category?",
       answerOptions: [
-        { answerText: "35", isCorrect: true },
-        { answerText: "42", isCorrect: false },
-        { answerText: "28", isCorrect: false },
-        { answerText: "36", isCorrect: false },
+        { answerText: "2004", isCorrect: false },
+        { answerText: "2016", isCorrect: true },
+        { answerText: "2008", isCorrect: false },
+        { answerText: "2019", isCorrect: false },
       ],
     },
     {
-      questionText: "What is Hagi's nickname?",
+      questionText: "Which is the club where Ana has started her career in Fencing?",
       answerOptions: [
-        { answerText: "The Wild Cat", isCorrect: false },
-        { answerText: "Maradonna from the Carpathians", isCorrect: true },
-        { answerText: "The King", isCorrect: false },
-        { answerText: "El Matador", isCorrect: false },
+        { answerText: "Steaua", isCorrect: true },
+        { answerText: "Dinamo", isCorrect: false },
+        { answerText: "CSU Politehnica Timisoara", isCorrect: false },
+        { answerText: "ACS Floreta Timisoara", isCorrect: false },
+      ],
+    },
+    {
+      questionText: "How many books did Ana published untill now?",
+      answerOptions: [
+        { answerText: "1", isCorrect: false },
+        { answerText: "2", isCorrect: false },
+        { answerText: "3", isCorrect: false },
+        { answerText: "4", isCorrect: true },
       ],
     },
   ];
@@ -93,4 +93,4 @@ const QuizzHagi = () => {
   );
 };
 
-export default QuizzHagi;
+export default Quizz;

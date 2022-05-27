@@ -1,42 +1,42 @@
 import React, { useState } from "react";
 import classes from "./Quizz.module.css";
-const QuizzHagi = () => {
+const QuizzHalep = () => {
   const questions = [
     {
-      questionText: "For which football club Hagi was the most efficient?",
+      questionText: "Which is the first GrandSlem tour won by Simona?",
       answerOptions: [
-        { answerText: "Real Madrid", isCorrect: false },
-        { answerText: "Brescia", isCorrect: false },
-        { answerText: "Steaua", isCorrect: false },
-        { answerText: "Galatasaray", isCorrect: true },
-      ],
-    },
-    {
-      questionText: "Which is the retirement age of Hagi?",
-      answerOptions: [
-        { answerText: "35", isCorrect: false },
-        { answerText: "34", isCorrect: false },
-        { answerText: "36", isCorrect: true },
-        { answerText: "37", isCorrect: false },
+        { answerText: "Australian Open", isCorrect: false },
+        { answerText: "Roland Garros", isCorrect: false },
+        { answerText: "Wimbledon", isCorrect: false },
+        { answerText: "U.S. Open", isCorrect: true },
       ],
     },
     {
       questionText:
-        "How many goals did Hagi score at National team of Romania?",
+        "Which is the favourite play surface of Simona according to statistics?",
       answerOptions: [
-        { answerText: "35", isCorrect: true },
-        { answerText: "42", isCorrect: false },
-        { answerText: "28", isCorrect: false },
-        { answerText: "36", isCorrect: false },
+        { answerText: "Slag", isCorrect: false },
+        { answerText: "Grass", isCorrect: false },
+        { answerText: "Hard surface", isCorrect: true },
+        { answerText: "Carpet", isCorrect: false },
       ],
     },
     {
-      questionText: "What is Hagi's nickname?",
+      questionText: "Who is her new coach?",
       answerOptions: [
-        { answerText: "The Wild Cat", isCorrect: false },
-        { answerText: "Maradonna from the Carpathians", isCorrect: true },
-        { answerText: "The King", isCorrect: false },
-        { answerText: "El Matador", isCorrect: false },
+        { answerText: "Victor Ioniță", isCorrect: false },
+        { answerText: "Patrick Mouratoglou⁠", isCorrect: true },
+        { answerText: "Kim Clijsters", isCorrect: false },
+        { answerText: "Darren Cahill", isCorrect: false },
+      ],
+    },
+    {
+      questionText: "Which is her start year in professional Tennis?",
+      answerOptions: [
+        { answerText: "2006", isCorrect: true },
+        { answerText: "2008", isCorrect: false },
+        { answerText: "2010", isCorrect: false },
+        { answerText: "2007", isCorrect: false },
       ],
     },
   ];
@@ -93,4 +93,4 @@ const QuizzHagi = () => {
   );
 };
 
-export default QuizzHagi;
+export default QuizzHalep;

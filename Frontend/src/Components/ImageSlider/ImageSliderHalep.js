@@ -3,6 +3,7 @@ import { SliderDataHalep } from "./SliderDataHalep";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import classes from "./ImageSlider.module.css";
 import Wrapper from "./Wrapper";
+import QuizzHalep from "../Quizz/QuizzHalep";
 
 const ImageSlider = ({ slides }) => {
   const [current, setCurrent] = useState(0);
@@ -73,6 +74,7 @@ const ImageSlider = ({ slides }) => {
         Strycova. Marti, Halep va juca primul sau meci in proba de simplu,
         impotriva Polonei Hercog, numar 46 WTA.
       </div>
+      <QuizzHalep />
     </Wrapper>
   );
 };

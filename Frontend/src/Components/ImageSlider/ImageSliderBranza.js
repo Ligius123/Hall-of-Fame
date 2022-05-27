@@ -3,6 +3,7 @@ import { SliderDataBranza } from "./SliderDataBranza";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import classes from "./ImageSlider.module.css";
 import Wrapper from "./Wrapper";
+import QuizzBranza from "../Quizz/QuizzBranza";
 
 const ImageSlider = ({ slides }) => {
   const [current, setCurrent] = useState(0);
@@ -82,6 +83,7 @@ const ImageSlider = ({ slides }) => {
         deseori la acel copil și, de acolo, îmi iau energia și dorința de a urca
         din nou și din nou pe podium.
       </div>
+      <QuizzBranza />
     </Wrapper>
   );
 };
