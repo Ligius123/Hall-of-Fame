@@ -19,9 +19,9 @@ const ShopPage = () => {
     <CartProvider>
       {cartIsShown && <Cart onClose={hideCartHandler} />}
       <Header onShowCart={showCartHandler} />
-      <div>
+      <main>
         <Articles />
-      </div>
+      </main>
     </CartProvider>
   );
 };

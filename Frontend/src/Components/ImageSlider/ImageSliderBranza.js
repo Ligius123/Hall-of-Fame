@@ -48,7 +48,7 @@ const ImageSlider = ({ slides }) => {
           );
         })}
       </section>
-      <div>
+      <div className={classes.data}>
         Cine este Brânzica? Copilul care a visat, a îndrăznit să creadă în visul
         lui și a muncit pentru el până ce a ajuns să-l împlinească. Cum ai
         descrie în câteva cuvinte relația cu fratele tău, în copilărie? Marius,

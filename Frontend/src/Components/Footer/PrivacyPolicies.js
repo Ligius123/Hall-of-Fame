@@ -3,7 +3,7 @@ import classes from "./Footer.module.css";
 
 const PrivacyPolicies = () => {
   return (
-    <Wrapper className={classes.inPage}>
+    <Wrapper className={classes.data}>
       When a user engages in certain actions on the site, they may provide us
       with certain kinds of information. This includes activities including but
       not limited to: Creating, accessing, and updating account information
