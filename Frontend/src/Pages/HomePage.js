@@ -1,7 +1,7 @@
-import { Fragment } from "react";
+import Home from "../Components/Home/Home";
 
 const HomePage = () => {
-  return <Fragment></Fragment>;
+  return <Home />;
 };
 
 export default HomePage;

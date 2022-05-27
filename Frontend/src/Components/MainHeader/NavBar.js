@@ -5,7 +5,6 @@ import classes from "./NavBar.module.css";
 import { NavLink } from "react-router-dom";
 
 const NavBar = (props) => {
-  // const image = window.location.origin + "/image.png"; 
   return (
     <Fragment>
       <nav className={classes.wrapper}>
@@ -13,8 +12,13 @@ const NavBar = (props) => {
         <div className={classes.rowSecond}>
           <NavLink to="/HomePage">
             <Button>
-          <img src={process.env.PUBLIC_URL + "/Home-icon.svg.png"} width="25" height="25" alt="" />
-          </Button>
+              <img
+                src={process.env.PUBLIC_URL + "/Home-icon.svg.png"}
+                width="25"
+                height="25"
+                alt=""
+              />
+            </Button>
           </NavLink>
           <div className={classes.pages}>
             <NavLink to="/ShopPage">
