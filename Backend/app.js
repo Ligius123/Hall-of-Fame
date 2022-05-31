@@ -7,7 +7,7 @@ const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 const { CONNREFUSED } = require('dns')
 
-import postRoutes from './routes/posts.js';
+import postRoutes from './controller/routes/posts.js';
 
 
 
@@ -108,3 +108,17 @@ app.post('/api/register', async(req,res) => {
         return res.json({ status: 'Error'})
     }
 })
+
+app.post('/checkout', (req, res) => {
+    let sess = req.session;
+    let cart = (typeof sess.cart !== 'undefined') ? sess.cart : false;
+    if(Security.isValidNonce(req.body.nonce, req)) {
+        res.render('checkout', {
+            pageTitle: 'Checkout',
+            cart: cart,
+            checkoutDone: true
+        });
+    } else {
+        res.redirect('/');
+    }
+});
