@@ -1,0 +1,35 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  justify-content: space-between;
+  /* margin-top: 2rem; */
+}
+
+.elements {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.element {
+  color: aliceblue;
+  font-size: 1rem;
+  margin: 1rem 0rem 1rem 0rem;
+  text-decoration: none;
+}
+
+.element:hover,
+.element:active,
+.element:focus {
+  text-shadow: 2px 2px rgba(255, 255, 255, 0.44);
+  cursor: pointer;
+  text-decoration: underline;
+}
+.inPage {
+  height: 100rem;
+}
+
+.data {
+  margin: 1rem 1rem 1rem 1rem;
+}

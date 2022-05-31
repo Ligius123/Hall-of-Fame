@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   max-height: 20rem;
-  overflow: auto;
+  overflow: scroll;
 }
 
 .total {
@@ -23,7 +23,7 @@
   font: inherit;
   cursor: pointer;
   background-color: transparent;
-  border: 1px solid #8a2b06;
+  border: 1px solid #5a8a06;
   padding: 0.5rem 2rem;
   border-radius: 25px;
   margin-left: 1rem;
@@ -37,10 +37,10 @@
 }
 
 .actions .button--alt {
-  color: #8a2b06;
+  color: #5a8a06;
 }
 
 .actions .button {
-  background-color: #8a2b06;
+  background-color: #5a8a06;
   color: white;
 }

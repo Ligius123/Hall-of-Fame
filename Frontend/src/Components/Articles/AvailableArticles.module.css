@@ -2,16 +2,16 @@
   max-width: 60rem;
   width: 90%;
   margin: 2rem auto;
-  animation: meals-appear 1s ease-out forwards;
+  animation: articles-appear 1s ease-out forwards;
 }
 
-.meals ul {
+.articles ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-@keyframes meals-appear {
+@keyframes articles-appear {
   from {
     opacity: 0;
     transform: translateY(3rem);

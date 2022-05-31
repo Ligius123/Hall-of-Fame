@@ -78,3 +78,6 @@ export const likePost = async (req, res) => {
 
 
 export default router;
+    // res.send('Post Creation');
+}
+

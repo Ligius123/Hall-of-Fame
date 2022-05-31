@@ -10,7 +10,16 @@ const NavBar = (props) => {
       <nav className={classes.wrapper}>
         <div className={classes.title}>Hall of Fame</div>
         <div className={classes.rowSecond}>
-          <Button type="button">Home</Button>
+          <NavLink to="/HomePage">
+            <Button>
+              <img
+                src={process.env.PUBLIC_URL + "/Home-icon.svg.png"}
+                width="25"
+                height="25"
+                alt=""
+              />
+            </Button>
+          </NavLink>
           <div className={classes.pages}>
             <NavLink to="/ShopPage">
               <Button type="button">Shop</Button>
@@ -18,7 +27,7 @@ const NavBar = (props) => {
             <div className={classes.dropdown}>
               <Button className={classes.Button}>Presentation</Button>
               <div className={classes.dropdown_content}>
-                <NavLink to="/HagiPage">Gheoarghe Hagi</NavLink>
+                <NavLink to="/HagiPage">Gheorghe Hagi</NavLink>
                 <NavLink to="/ComaneciPage">Nadia Comaneci</NavLink>
                 <NavLink to="/BranzaPage">Ana Maria Branza</NavLink>
                 <NavLink to="/HalepPage">Simona Halep</NavLink>
