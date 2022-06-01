@@ -7,6 +7,7 @@ const secret = "test";
 
 export const signin = async (req, res) => {
   const { email, password } = req.body;
+  console.log(req.body);
 
   try {
     const oldUser = await UserModal.findOne({ email });
@@ -30,7 +31,8 @@ export const signin = async (req, res) => {
 };
 
 export const signup = async (req, res) => {
-  const { email, password } = req.body;
+  const { email, password, firstName, lastName } = req.body;
+  console.log(req.body);
 
   try {
     const oldUser = await UserModal.findOne({ email });
@@ -40,10 +42,14 @@ export const signup = async (req, res) => {
 
     const hashedPassword = await bcrypt.hash(password, 12);
 
+    console.log(firstName, lastName);
     const result = await UserModal.create({
       email,
       password: hashedPassword,
+      name: `${firstName} ${lastName}`,
     });
+
+    console.log(result);
 
     const token = jwt.sign({ email: result.email, id: result._id }, secret, {
       expiresIn: "1h",
