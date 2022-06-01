@@ -3,8 +3,24 @@ import { Fragment } from "react";
 import Button from "../UI/Button";
 import classes from "./NavBar.module.css";
 import { NavLink } from "react-router-dom";
+import { fetchPosts } from "../../api";
 
 const NavBar = (props) => {
+  //const { posts } = useSelector((state) => state.posts);
+
+  //fct care returneaza toate item urile dintr o colectie de mongoDB
+  const handleClick = async ()=>{
+    try{
+      console.log("aici");
+      const response =  await fetchPosts();
+      console.log(response);
+    }catch(err){
+        console.log(err);
+    }
+  }
+
+  handleClick();
+
   return (
     <Fragment>
       <nav className={classes.wrapper}>
@@ -22,7 +38,7 @@ const NavBar = (props) => {
           </NavLink>
           <div className={classes.pages}>
             <NavLink to="/ShopPage">
-              <Button type="button">Shop</Button>
+              <Button type="button" onClick={handleClick}>Shop</Button>
             </NavLink>
             <div className={classes.dropdown}>
               <Button className={classes.Button}>Presentation</Button>
