@@ -6,9 +6,9 @@ const QuizzHalep = () => {
       questionText: "Which is the first GrandSlem tour won by Simona?",
       answerOptions: [
         { answerText: "Australian Open", isCorrect: false },
-        { answerText: "Roland Garros", isCorrect: false },
+        { answerText: "Roland Garros", isCorrect: true },
         { answerText: "Wimbledon", isCorrect: false },
-        { answerText: "U.S. Open", isCorrect: true },
+        { answerText: "U.S. Open", isCorrect: false },
       ],
     },
     {
