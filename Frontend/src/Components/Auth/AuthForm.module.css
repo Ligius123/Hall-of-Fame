@@ -4,7 +4,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 60%;
+  width: 50%;
+  height: 35rem;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -12,7 +13,7 @@
   box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.75);
   max-width: 60rem;
   /* width: 90%; */
-  margin: 2rem auto;
+  margin: 6rem auto;
   animation: wrapper-appear 1s ease-out forwards;
 }
 
@@ -31,6 +32,11 @@
   text-align: center;
   box-shadow: 0 0 15px 5px rgba(36, 38, 40, 0.8);
   opacity: 0.9;
+}
+
+.text {
+  color: aliceblue;
+  /* text-shadow: 2px 2px rgba(255, 255, 255, 0.44); */
 }
 
 .auth h1 {

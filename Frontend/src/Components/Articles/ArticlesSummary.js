@@ -9,7 +9,7 @@ const ArticlesSummary = () => {
         articles and enjoy it by playing with your friends
       </p>
       <p>
-        All our articles are hgih quality level, made by the best companies in
+        All our articles are high quality level, made by the best companies in
         business
       </p>
     </section>
